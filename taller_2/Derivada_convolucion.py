@@ -22,7 +22,7 @@ def derivada(x,f):
         suma=0
         m=-1
         while m <=1:
-            valor=(M[m+1])*f(x[i-m])
+            valor=(M[m+1])*f(x[i]-(m*h))
             suma+=valor
             m+=1 
         resultado=(1/(2*h))*suma
