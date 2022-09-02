@@ -8,6 +8,7 @@ Created on Tue Aug 30 21:30:54 2022
 
 import numpy as np
 import matplotlib.pyplot as plt
+import sympy as sym
 x=np.linspace(-10,10)
 M=[1,-2,1]
 def funcion(x):
@@ -15,6 +16,7 @@ def funcion(x):
     return 1/(pow(1+exponencial,1/2))
 function=funcion(x)
 h=0.05
+simbolo = sym.Symbol('x')
 def derivada(x,f):
     lista=[]
     i=1
